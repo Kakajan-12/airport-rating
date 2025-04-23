@@ -4,8 +4,8 @@ import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { useState, Suspense } from 'react';
 import dynamic from 'next/dynamic';
+import logo from "../../public/Logo.svg"
 
-// Альтернативная реализация Lottie с Suspense
 const LottiePlayer = dynamic(
     () => import('@/Components/LottiePlayer'),
     {
@@ -31,7 +31,7 @@ const Home = () => {
             <div className="w-full lg:w-1/2 bg-green-600 flex justify-center items-center p-6">
                 <div className="max-w-md w-full">
                     <div className="flex justify-center mb-8">
-                        <Image src="./logo.svg" alt="logo" width={300} height={100} />
+                        <Image src={logo} alt="logo" width={300} height={100} />
                     </div>
 
                     <h1 className="text-white text-2xl md:text-3xl font-bold text-center mb-6">
@@ -46,7 +46,7 @@ const Home = () => {
                         <input
                             type="text"
                             placeholder="ID карты"
-                            className="w-full p-3 input rounded-full focus:ring-2 focus:ring-green-300"
+                            className="w-full p-3 input border-0 rounded-full focus:ring-2 focus:ring-green-300"
                             value={cardId}
                             onChange={(e) => setCardId(e.target.value)}
                             required
@@ -54,7 +54,7 @@ const Home = () => {
                         <input
                             type="password"
                             placeholder="Пароль"
-                            className="w-full p-3 input rounded-full focus:ring-2 focus:ring-green-300"
+                            className="w-full p-3 input border-0 rounded-full focus:ring-2 focus:ring-green-300"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required
