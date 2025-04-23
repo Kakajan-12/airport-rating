@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <div className="flex max-w-3/2 items-center justify-between green p-6 px-8 container">
             <div>
-                <Image src="/logo.svg" alt="logo" width={300} height={100} />
+                <Image src="./logo.svg" alt="logo" width={300} height={100} />
             </div>
 
             <div className="relative flex bg-white rounded-4xl p-2">

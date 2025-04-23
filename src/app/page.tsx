@@ -31,7 +31,7 @@ const Home = () => {
             <div className="w-full lg:w-1/2 bg-green-600 flex justify-center items-center p-6">
                 <div className="max-w-md w-full">
                     <div className="flex justify-center mb-8">
-                        <Image src="/logo.svg" alt="logo" width={300} height={100} />
+                        <Image src="./logo.svg" alt="logo" width={300} height={100} />
                     </div>
 
                     <h1 className="text-white text-2xl md:text-3xl font-bold text-center mb-6">
