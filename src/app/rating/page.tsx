@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { FaStar } from 'react-icons/fa';
 import Image from "next/image";
+import {check} from "../../../public/check.png"
 
 // Явно указываем тип для ratingLabels с индексом типа number
 const ratingLabels: { [key: number]: string } = {
@@ -65,7 +66,7 @@ const Rating = () => {
             {isSubmitted && (
                 <div className="absolute inset-0 flex items-center justify-center backdrop-blur-sm" style={{ backgroundColor: "rgba(0,0,0,.4)" }}>
                     <div className="flex flex-col items-center py-10 px-5 bg-white rounded-xl w-75 -mt-60">
-                        <Image src="/check.png" alt="check" width={100} height={100} />
+                        <Image src={check} alt="check" width={100} height={100} />
                         <div className="text-green text-2xl text-center mt-4">
                             Спасибо, ваша оценка принята!
                         </div>
