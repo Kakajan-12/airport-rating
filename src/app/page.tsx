@@ -46,7 +46,7 @@ const Home = () => {
                         <input
                             type="text"
                             placeholder="ID карты"
-                            className="w-full p-3 input border-0 rounded-full focus:ring-2 focus:ring-green-300"
+                            className="w-full p-3 input border-0 rounded-full outline-none"
                             value={cardId}
                             onChange={(e) => setCardId(e.target.value)}
                             required
@@ -54,7 +54,7 @@ const Home = () => {
                         <input
                             type="password"
                             placeholder="Пароль"
-                            className="w-full p-3 input border-0 rounded-full focus:ring-2 focus:ring-green-300"
+                            className="w-full p-3 input border-0 rounded-full outline-none"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required
